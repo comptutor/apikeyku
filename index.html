@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>StoreMart - SaaS Grocery delivery system</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Papon Apps">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="#"><span class="logo-text">Papon<span class="text-alt"> Apps</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
+				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Admin configuration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">SQL Database Setup</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Change WEBSITE_HOST</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Change Currency</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Change Timezone</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Email Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-6">WhatsApp Number</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7">Order text</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-8">Google Analytics</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-9">Login With Google</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-10">Login With Facebook</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-list"></i></span>Add-ons</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 1 April. 2023</span></h1>
+					    <section class="docs-intro">
+						    <p>Thank you for purchasing our app</p>
+						    <p>Please read the documentation carefully , and if you have any question mail us at <a class="scrollto" href="mailto:paponapp2244@gmail.com">"paponapp2244@gmail.com"</a>. Most pages are accompanied by a video tutorial , it's recommended to check both , the video and the written Documentation . 
+						        
+					        <h4 id="phainc-theme-addons">Must Read this:</h4>
+					        <ul>
+					        	<li>This system is in Larevel 8 and it will work on any kind of hosting (PHP Supported) packages </li>
+					        	<li>If you have purchased Regular License then Purchase key will only be used once.</li>
+					        	<li>In Regular License you can't setup in multiple domains. If you want to setup in another domain you must have to purchase new licence</li>
+					        	<li><i>For addons purchase & installation you can contact to our support team.</i></li>
+					        </ul>
+
+					        <h4>What are the Server Requirements to activate the script?</h4>
+					        <p>To install the Script minimum server requirements are:</p>
+					        <ul>
+					        	<li>PHP Version: 8.0</li>
+					        	<li>allow_url_fopen</li>
+					        	<li>MySQL Version: >= 5.x</li>
+					        	<li>mod_rewrite Apache</li>
+					        	<li>Mbstring PHP Extension</li>
+					        	<li>OpenSSL PHP Extension</li>
+					        	<li>PDO PHP Extension</li>
+					        	<li>ZipArchive Extension</li>
+					        	<li>cURL</li>
+					        </ul>
+					        <p>In most servers, these extensions are enabled by default, but you should check with your hosting provider</p>
+					        
+						</section><!--//docs-intro-->						
+						
+				    </header>
+				    <section class="docs-section" id="section-2">
+						<h2 class="section-heading">Admin Panel configuration</h2>
+						<p>Installing Admin Panel is an easy process and we will guide you through it.</p>
+                        
+                        
+                        <ul>
+                            <li>Extract the downloaded .zip file from codecanyon on your PC.</li>
+                            <li>
+                                <strong>Upload</strong> the project.zip file to your server <strong>public_html</strong> or any other <strong>directory</strong> you intend to run the script. (See the below video for full process)
+                            </li>
+                            <li><strong>Extract</strong> the zip file in that directory. (See the below video for full process)</li>
+                            <li>Create a new database from your server <strong>MySQL database.</strong> (See the below video for full process)</li>
+                            <li>Create a DB <strong>user</strong> to the database and link that <strong>database</strong> to the <strong>DB user</strong>. (See the below video for full process)</li>
+                            <li>Now you need to import the SQL file. (See the below video for full process)</li>
+                            <li>For Database configurations You have to edit <strong>.env</strong> file (See the below video for full process)</li>
+                        </ul>
+                        
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/admin-setup.mp4" data-title="Upload code on server" data-toggle="lightbox">
+						    	<video width="320" height="240" controls>
+						    	  <source src="assets/images/admin-setup.mp4" type="video/mp4">
+						    	  Your browser does not support the video tag.
+						    	</video>
+						    </a>
+						</figure>
+
+						<p>Now open admin panel through your domain <strong> http://domain.com/folder-name </strong> and use login <strong>admin@gmail.com</strong> and password is <strong>123456</strong>  </p>
+                        <strong style="color: red;"><em>*Note: Make sure your SQL File has been imported & Database Connection successfully works</em></strong>
+
+                        <h2 class="section-heading mt-3">How to activate the script ?</h2>
+                        <p>Following the given procedure below will make the license activated for your domain and
+							you’ll be able to use the script smoothly</p>
+							<ul>
+								<li>Open the link in the browser. (http://domainurl.com/folder-name) Your domain URL will be your real domain URL & folder name is your actual folder name (If you Uploaded on folder otherwise you can ignore foldername)</li>
+								<li>If you see 404 page you must have to mention your host URL <a href="#item-2-2">check here how to add HOST URL</a></li>
+								<li>In the respective fields, put your CodeCanyon Username, E-mail, Purchase Key for
+								your intended domain name for the script.</li>
+								<li>The form will be submitted to check the purchase key and then activate the licence for
+									that domain.</li>
+							</ul>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">SQL Database Setup</h2>
+						<p><strong>Step 1 -</strong> You have to import the SQL file which we have provided in your downloaded package from <strong>codecanyon</strong></p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/importSQLfile.png" data-title="Import SQL file" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/importSQLfile.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Fill the database connection details in <strong>".env"</strong></p>
+
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/envfile.png" data-title=".env File" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/envfile.png" alt="" style="width: 600px;">
+							</a>
+						</figure>
+
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/database.png" data-title=".env File" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/database.png" alt="" style="width: 600px;">
+							</a>
+						</figure>
+
+						<br>
+                								
+						<code>
+							DB_DATABASE=DATABASE_NAME<br>
+							DB_USERNAME=DATABASE_USERNAME<br>
+							DB_PASSWORD=DATABASE_PASSWORD<br>
+						</code>
+
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Change WEBSITE_HOST</h2>
+
+						<p>Fill the Website host details in <strong>".env"</strong></p>
+
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/envfile.png" data-title=".env File" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/envfile.png" alt="" style="width: 600px;">
+							</a>
+						</figure>
+
+						<p>
+							How to get website host: <br>
+							if your website URL is https://example.com/ , then host will be emaple.com<br>
+							if your website URL is https://subdomain.example.com/ , then host will be subdomain.example.com<br>							
+						</p>
+
+						<p>search for WEBSITE_HOST & change the red marked part (shown in screenshot)</p>
+
+						<strong style="color: red;"><em>*Note: If you are using custom domain Addon You & Your vendors can access admin panel "WEBSITE_HOST/admin" (WEBSITE_HOST means as per mentioned below image)</em></strong>
+
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/website_host.png" data-title=".env File" data-toggle="lightbox"><img class="figure-img img-fluid shadow rounded" src="assets/images/website_host.png" alt="" style="width: 600px;">
+							</a>
+						</figure>
+
+						<br>
+                								
+						<code>
+							WEBSITE_HOST=your_website_host
+						</code>
+
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Change Currency</h2>
+						<p>Add your Currency here</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/currency.png" data-title="Add Currency in Admin" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/currency.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-4">
+						<h2 class="section-heading">Change Timezone</h2>
+						<p>Set your Timezone here</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/timezone.png" data-title="Change Timezone" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/timezone.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-5">
+						<h2 class="section-heading">Email Configuration</h2>
+						<p>If you are using gmail for email configuration. Follow this link "How to create Gmail App Password"
+							<a href="https://support.google.com/mail/answer/185833?hl=en" target="_blank">Click Here</a>
+						</p>
+						<strong style="color: red;"><em>*Note: Email Configuration is not a critical bug. If you unable to Configure You can take our Paid Support Contact us at <a href="mailto:paponapp2244@gmail.com">paponapp2244@gmail.com</a> (Email Configuration cost will be 40 USD)</em></strong>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/mail.png" data-title="Email Configuration" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/mail.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Fill your own Email Credentials in <strong>".env"</strong></p>
+												
+						<code>
+						MAIL_USERNAME=YOUR_EMAIL_ADDRESS<br>
+						MAIL_PASSWORD=YOUR_EMAIL_APP_PASSWORD
+						</code>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-6">
+						<h2 class="section-heading">WhatsApp number</h2>
+						<p>Here is the screenshot for change the whatsapp number</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/ordertext.png" data-title="WhatsApp Configuration" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/ordertext.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-7">
+						<h2 class="section-heading">Order message</h2>
+						<li>For change the order text You have to edit Vendor Admin > Settings > WhatsApp Message Settings </li>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/ordertext.png" data-title="Order message" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/ordertext.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-8">
+						<h2 class="section-heading">Google Analytics</h2>
+						<li>Go to <a href="https://console.developers.google.com/apis/dashboard" target="_blank">https://console.developers.google.com/apis/dashboard</a> and create a new project.</li>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-1.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-1.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-2.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-2.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<li>Select your project and click on "ENABLE APIS AND SERVICES":</li>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-3.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-3.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<li>Enable API:</li>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-4.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-4.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-5.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-5.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-6.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-6.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<li>Generate service account key:</li>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-7.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-7.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-8.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-8.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-9.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-9.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<li>Relpace this json file under <b>storage/app/analytics</b></li>
+						<hr>
+						<h2>Setting Google Analytics</h2>
+						<li>Go to Google Analytics account: <a href="https://analytics.google.com/analytics/web/" target="_blank">https://analytics.google.com/analytics/web/</a> Click on Admin => `View Settings and copy View ID number, then go back to the Settings General page, click to Google Analytics and paste to View ID field.</li>
+
+						<strong style="color: red;"><em>*INFO: Change in Google Analytics 4 property.</em></strong>
+
+						<li>When creating a new property, you need to check the "Create a Universal Analytics Property" checkbox.</li>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-10.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-10.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<li>Tracking ID.</li>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-15.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-15.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<li>Copy the Tracking ID & go to the Admin Panel > General Settings > GOOGLE ANALYTICS</li>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-14.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-14.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<li>Then you will have view settings tab and View ID.</li>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-11.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-11.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<li>Copy the view id & go to the Admin Panel > General Settings > GOOGLE ANALYTICS</li>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-14.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-14.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<li>Open JSON credentials file and copy client email. Then click on "User management" and add that email to list account. Just need view only permission.</li>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-12.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-12.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/g-analytics-13.jpg" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/g-analytics-13.jpg" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+						<br>
+						<code>
+							Analytics data in Admin dashboard is displayed daily data, so it will reset chart every day. It is displaying data from API, not realtime analytics so please wait until your site has data from API.
+						</code>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-9">
+						<h2 class="section-heading">Login with Google</h2>
+
+						<p>In this step we need google client id and secret that way we can get information of other user. so if you don't have google app account then you can create from here : <a href="https://console.developers.google.com/" target="_blank"> Google Developers Console </a>. you can find bellow screen :</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/laravel-login-google-1.png" data-title="Login with Google" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/laravel-login-google-1.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>Now you have to click on <strong style="color: red;"><em>Credentials</em></strong> and choose first option <strong style="color: red;"><em>oAuth</em></strong> and click <strong style="color: red;"><em>Create new Client ID</em></strong> button. now you can see following slide:</p>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/laravel-login-google-2.png" data-title="Login with Google" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/laravel-login-google-2.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/laravel-login-google-3.png" data-title="Login with Google" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/laravel-login-google-3.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<figure class="figure docs-figure py-3">
+						    <a href="assets/images/laravel-login-google-4.png" data-title="Login with Google" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/laravel-login-google-4.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p>after create account you can copy client id and secret.</p>
+                        
+                        <p>Now you have to set app id, secret and call back url in config file so open <strong style="color: red;"><em>config/services.php</em></strong> and set id and secret this way:</p>
+
+                        <figure class="figure docs-figure py-3">
+						    <a href="assets/images/services.png" data-title="config/services.php" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/services.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p><strong style="color: red;"><em>*Note: Login with Google is not a critical bug. If you unable to Configure You can take our Paid Support Contact us at <a href="mailto:paponapp2244@gmail.com">paponapp2244@gmail.com</a> (Login with Google Configuration cost will be 40 USD)</em></strong></p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-10">
+						<h2 class="section-heading">Login with Facebook</h2>
+
+						<p>In this step we need facebook app id and secret that way we can get information of other user. so if you don't have facebook app account then you can create from here : <a href="https://developers.facebook.com/apps" target="_blank">https://developers.facebook.com/apps </a> and after create account you can copy client id and secret.</p>
+
+						<p>Now you have to set app id, secret and call back url in config file so open .env file then set id and secret this way:</p>
+
+                        <figure class="figure docs-figure py-3">
+						    <a href="assets/images/services.png" data-title="Login with Facebook" data-toggle="lightbox">
+						    	<img class="figure-img img-fluid shadow rounded" src="assets/images/services.png" alt="" style="width: 600px;">
+						    </a>
+						</figure>
+
+						<p><strong style="color: red;"><em>*Note: Login with Facebook is not a critical bug. If you unable to Configure You can take our Paid Support Contact us at <a href="mailto:paponapp2244@gmail.com">paponapp2244@gmail.com</a> (Login with Facebook Configuration cost will be 40 USD)</em></strong></p>
+					</section><!--//section-->
+					
+			    </article>
+			    
+			    <article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+				    </header>
+				     <section class="docs-section" id="item-9-1">
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>How Can I change landing page!</h5>
+						<p>
+							Change landing page images from below file 
+
+							storage/app/public/landing/images
+
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>My custom domain is not working.</h5>
+						<p>
+							If you're using cPanel or Plesk then you need to manually add your custom domain in your server with the same root directory as the script's installation.
+							We do not provide support for multiple domains as this is directly related to your host / server.
+							<br><br>
+							<b>Custom Domain configuration is completely depends on your hosting server. If it is not working then contact to your hosting server support for the solution.</b>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Admin Panel Develope in PHP?</h5>
+						<p>Yes, Admin Panel Develope in PHP (Laravel 9.0)</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Which PHP version?</h5>
+						<p>it will work on PHP 8.0  </p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Which Database You are using?</h5>
+						<p>We are using mysql database</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Does it have Admin panel?</h5>
+						<p>Yes, Admin is in HTML/CSS and connected with datbase via PHP (Laravel)</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Does it have Documentation?</h5>
+						<p>Yes, it has Documentaion about admin setup , admin panel setup</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Which framework we are using for API?</h5>
+						<p>We are using Laravel 9.0</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Do you provide customization?</h5>
+						<p>Yes, we do but there will be an extra cost , contact us on our email paponapp2244@gmail.com </p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What it means when you see white page or error by going to this url http://domain.com/project/?</h5>
+						<p>If you see white page please make sure that your php version should be 8.0. you can change php version 8.0 by going into your hosting cpanel </p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+				<article class="docs-article" id="section-8">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Add-ons </h1>
+						<p>Addons - With the growing library of Addons, StoreMart is improving every day.</p>
+
+						<li><i>For addons purchase & installation you can contact to our support team.</i></li>
+
+						<a href="https://api.whatsapp.com/send?text=I want to buy StoreMart Addons&phone=919016996697" class="btn btn-success" target="_blank">Buy now</a>
+				    </header>
+				     <section class="docs-section" id="item-9-1">
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>All access pass</h5>
+						<p>
+							-> Access Full system Without any Subscription plan <br>
+							-> Assign plan Manually from admin <br>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Google Analytics</h5>
+						<p>
+							-> Track your website traffic with the most powerful analytics provided by google <br>
+							-> Analytics helps to improve your business in modern way <br>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Blogs</h5>
+						<p>
+							-> Blog section gives you an  edge in SEO Ranking <br>
+							-> Add and manage the blogs <br>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Custom Domain</h5>
+						<p>
+							-> Custom domain for Store website <br>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Multiple Language</h5>
+						<p>
+							-> Add and manage Multiple languages <br>
+							-> Create and manage translations for your website <br>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Social Logins</h5>
+						<p>
+							-> Attract more customers by Offering Social Logins <br>
+							-> Google and Facebook Both Options <br>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Sound Notification</h5>
+						<p>
+							-> Attract more customer by Offering Order notification <br>
+							-> New Order notification For vendor dashboard <br>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Multiple themes</h5>
+						<p>
+							-> Multiple themes Set & Manage option <br>
+							-> Dynamic Primary & Secondary color option <br>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Personalised Slug</h5>
+						<p>
+							-> Create a Personal Slug For Your Business <br>
+							-> Edit Slug Any Time When  You Want <br>
+						</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Vendor Mobile App</h5>
+						<p>
+							-> Manage Store on the mobile app <br>
+							-> Manage Orders / Bookings <br>
+							-> Developed in Flutter <br>
+						</p>
+
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Whatsapp Message</h5>
+						<p>
+							-> Send WhatsApp Message To Vendor For New Order / Booking <br>
+							-> Dynamic Message Settings For Vendor <br>
+						</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Customer Login</h5>
+						<p>
+							-> Customer Can log in / Register  Their Account <br>
+							-> Vendors Can See the Customer  List <br>
+						</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Mercado Pago</h5>
+						<p>
+							-> Online payment processing with Mercado Pago <br>
+							-> Simple checkout for your customers <br>
+						</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>PayPal</h5>
+						<p>
+							-> Online payment processing with PayPal <br>
+							-> Simple checkout for your customers <br>
+						</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>My Fatoorah</h5>
+						<p>
+							-> Online payment processing with My Fatoorah <br>
+							-> Simple checkout for your customers <br>
+						</p>
+						
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Toyyib Pay</h5>
+						<p>
+							-> Online payment processing with Toyyib Pay <br>
+							-> Simple checkout for your customers <br>
+						</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <article class="docs-article">
+	    	        <section class="docs-intro">
+	    	    	    <p> I'd like to thank you again for your purchase and I hope you where able to successfully install the app and using it in your future business . If you need support or have some questions. You can visit our support resources here at <b style="color:#fc5a55;">paponapp2244@gmail.com</b> </p>
+	    	    	    <strong>What support does include</strong>
+	    	    	    <ul>
+	    	    	    	<li>Answers to (technical) questions about the item's features</li>
+	    	    	    	<li>Assistance with reported bugs and issues</li>
+	    	    	    </ul>
+	    	    	    
+	    	    	    
+	    	    	    <strong>Please note that support does not include:</strong>
+	    	    	    <ul>
+	    	    	    	<li>Customization &amp; adding new features</li>
+	    	    	    	<li>Installation services</li>
+	    	    	    	<li>Support for 3rd party software and/or plugins</li>
+	    	    	    	<li>Content related rejections and violations from Apple</li>
+	    	    	    
+	    	    	    </ul>
+	    	    	</section><!--//docs-intro-->
+		        </article>
+
+		        <footer class="footer">
+		    	    <div class="container text-center py-5">
+		    	        <small class="copyright">Designed & Developed by <a class="theme-link" href="https://paponapps.co.in/" target="_blank">Papon Apps</a></small>
+		    	        <a href="mailto:paponapp2244@gmail.com" class="cookieConsentOK">paponapp2244@gmail.com</a>
+		    	    </div>
+		        </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
